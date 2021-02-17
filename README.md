@@ -1,20 +1,12 @@
 # nuxt-docker-optimization
 
-## Build Setup
+Nuxt.js アプリケーションの Docker イメージを軽量化するデモ。
+手元の環境では 1.15GB のイメージを 188MB まで小さくすることができている。
 
-```bash
-# install dependencies
-$ yarn install
+## コマンド
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+```sh
+$ yarn build-docker # 最適化されていないイメージをビルド
+$ yarn build-docker-optimized # 最適化されたイメージをビルド
+$ yarn run-docker # 上で作成したイメージを実行
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
